@@ -1,0 +1,29 @@
+-var head_url = 'https://skutskaya.mastervision.su/rune-programming/';
+-var head_title = '«Программирование событий на языке рун»';
+-var head_description = '3-хдневный бесплатный онлайн-интенсив Анны Скуцкой';
+-var head_img = 'https://skutskaya.mastervision.su/rune-programming/img/banner.jpg';
+-var styles = 'css/styles.css';
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/header
+		include pug/main/main
+		include pug/main/mail_sec
+		include pug/main/for
+		include pug/main/usefull
+		include pug/main/get
+		include pug/main/plan
+		include pug/main/author
+		include pug/main/revs
+		include pug/main/last
+		include pug/main/scripts
+		<!--BEGIN JIVOSITE CODE-->
+		//script
+			| (function() {var widget_id = 'cMdj5UfoZX';var s = document.createElement('script');s.type = 'text/javascript';s.async = true;s.src = '//code.jivosite.com/script/widget/' + widget_id;var ss = document.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s, ss);})();
+		<!--END JIVOSITE CODE-->
+		include pug/scripts/body_bottom_scripts
