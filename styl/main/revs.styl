@@ -7,7 +7,14 @@
 	background-size: cover
 #text_revs
 	.carousel-inner
-		padding-bottom: 5px
+		padding: 0 5px 5px
+		.revs_img
+			border-radius: 20px;
+			box-shadow: 5px 5px 0px 0px rgba(214, 201, 224, 0.4);
+			height 270px
+			object-fit: contain
+			object-position: center
+			background-color #fff
 .carousel
 	width 100%
 	max-width 900px
@@ -16,13 +23,7 @@
 .video_wrapper_revs
 		width 690px
 		margin 0 auto
-.revs_img
-	border-radius: 20px;
-	box-shadow: 5px 5px 0px 0px rgba(214, 201, 224, 0.4);
-	height 228px
-	object-fit: contain
-	object-position: center
-	background-color #fff
+
 .controls
 	position: absolute
 	left 0
@@ -34,11 +35,16 @@
 	width 49px
 	opacity 1
 	text-shadow: none
-	background-repeat no-repeat
-	background-position: center
-	border-radius: 50px
 	background-color: transparent
+	border-radius: 50px
 .carousel-control.left
-	background-image url(../img/prev.png)
+	background-image url(../img/nav_arrows.png)
+	background-repeat no-repeat
+	background-position: 0 0
 .carousel-control.right
-	background-image url(../img/next.png)
+	background-image url(../img/nav_arrows.png)
+	background-repeat no-repeat
+	background-position -49px 0
+.fancybox-image
+	border-radius: 20px
+	box-shadow: 5px 5px 0px 0px rgba(214, 201, 224, 0.4);

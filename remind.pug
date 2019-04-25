@@ -1,0 +1,20 @@
+-var head_title = 'Вы записывались на интенсив по Программированию событий на языке рун';
+-var head_description = 'Скорее проверьте почту, вас ждут домашние задания!';
+-var styles = '../css/bonus.css';
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head_in
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/bonus/header
+		section#main.remind
+			.container
+				h1.main_title.remind_main_title Вы зарегистрированы на интенсив 
+					a(href="/" target="_blank") по Программированию событий на языке рун 
+						i.fa.fa-external-link(aria-hidden="true")
+				h2.main_subtitle.remind_main_subtitle Скорее проверьте почту, вас ждут домашние задания!
+		include pug/bonus/footer
+		include pug/scripts/body_bottom_scripts
