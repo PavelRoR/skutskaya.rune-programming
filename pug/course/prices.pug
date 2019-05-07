@@ -1,0 +1,75 @@
+-var cost_1 = '16 400р.';
+-var cost_2 = '28 900р.';
+-var cost_3 = '43 400р.';
+
+-var link_1 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3129&clean=true&lg=ru';
+-var link_2 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3132&clean=true&lg=ru';
+-var link_3 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3135&clean=true&lg=ru';
+
+-var prep_bonus = '1 100р.'
+-var prep_cred = '3 000р.'
+-var prep_link = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=3094&clean=true&lg=ru'
+
+section#prices
+	.container
+		h3.general_title.general_title_prices Выберите свой пакет участия
+		.row
+			.col-md-4.col-sm-4
+				.packet
+					.packet_head
+						h4.packet_head_title
+							small Пакет
+							| "Серебро"
+					.packet_body
+						h5.packet_body_title 26 уроков в записи
+						p.more_button(data-toggle="modal" data-target="#modalSilver") подробнее
+					.packet_footer
+						.cost Стоимость
+							span= cost_1
+						a.button.button_cost(href=link_1 target="_blank")#link_1 Выбрать
+			.col-md-4.col-sm-4
+				.packet
+					.packet_head
+						h4.packet_head_title
+							small Пакет
+							| "Золото"
+					.packet_body
+						h5.packet_body_title 4 урока + 26 уроков Серебра + бонус Серебра + чат
+						p.more_button(data-toggle="modal" data-target="#modalGold") подробнее
+					.packet_footer
+						.cost Стоимость
+							span= cost_2
+						a.button.button_cost(href= link_2 target="_blank")#link_2 Выбрать
+			.col-md-4.col-sm-4
+				.packet
+					.packet_head
+						h4.packet_head_title
+							small Пакет
+							| "Платина"
+					.packet_body
+						h5.packet_body_title 1 урок + 26 уроков Серебра + 4 урока Золота + 2 бонуса (Серебро + Золото) + чат
+						p.more_button(data-toggle="modal" data-target="#modalPlatinum") подробнее
+					.packet_footer
+						.cost Стоимость
+							span= cost_3
+						a.button.button_cost(href= link_3 target="_blank")#link_3 Выбрать
+		.prepayment
+			h4.prepaymant_title Акция!!!
+			p.prepayment_text Платите 1900 рублей, бонусом получаете 
+				span#prepayment_bonus= prep_bonus 
+				br
+				| На счет зачисляется 
+				span#prepayment_credited= prep_cred
+			a.button.prepayment_button(href= prep_link target="_blank")#prepayment_link Оплатить 1 900р.
+		.timer
+			h4.timer_title Бонус уменьшится через:
+			.clock
+			.clock-stop
+		.recs_sale
+			h3.general_title.general_title_recs Записей интенсива нет в свободном доступе
+			p.buy_recs_text Но вы можете приобрести их полные версии за 590р.
+			br.hide
+			a.button.buy_recs_button(href="https://shop.mastervision.su/?r=ordering/cart/as1&id=3090&clean=true&lg=ru" target="_blank") Купить
+		.garants
+			h4.garants_title Гарантия возврата
+			p.garants_text Если в течение 14 дней Вы поймете, что курс Вам не подходит или по иным причинам решите, что не можете продолжать обучение, мы вернем деньги без вопросов

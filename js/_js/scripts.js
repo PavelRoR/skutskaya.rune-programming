@@ -83,12 +83,28 @@ $(document).ready(function () {
 			transitionEffect: 'slide'
 		});
 	});
-	$(function () {
-
-		$(".video_wrapper img").click(function () {
-			var a = $(this).parent().attr("data-youtube");
-			$(this).parent().html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1"  allowfullscreen></iframe>')
-		});
-	});
+    $(function () {
+        $(".video_wrapper_revs .video_rev_img").click(function () {
+            var a = $(this).parent().attr("data-youtube");
+            $(this).parent().html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1"  allowfullscreen></iframe>');
+            console.log(a);
+        });
+    });
+    
+    $(function () {
+        $('#video_revs').on('slide.bs.carousel', function () {
+            $('.video_wrapper_revs').each(function(){
+                // var v =$('.video_rev_img');
+                var l =$(this).attr('data-img');
+                $(this).html('<img class="video_rev_img" src="'+l+'" alt="Видео отзыв">');
+                console.log(l);
+            });
+            $(".video_wrapper_revs .video_rev_img").click(function () {
+                var a = $(this).parent().attr("data-youtube");
+                $(this).parent().html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1"  allowfullscreen></iframe>');
+                console.log(a);
+            });
+          });
+    });
 	/*Конец документа*/
 });

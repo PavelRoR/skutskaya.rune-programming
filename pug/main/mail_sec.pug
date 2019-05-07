@@ -2,16 +2,18 @@ section#mail_section
 	.container
 		.custom_container
 			.row
-				.col-md-6
-					h3.mail_section_title Запишитесь сейчас и получите бонус!
-						small «Диагностика ситуации выбора»
-				.col-md-6
+				.col-lg-7.col-md-6
+					h3.mail_section_title Каждому, пришедшему на БЕСПЛАТНЫЙ ИНТЕНСИВ, дарим денежные подарки!
+						br
+						| И проводим грандиозный розыгрыш с ценным призом!
+						small Зарегистрируйтесь сейчас и получите бонус на email «Диагностика ситуации выбора»
+				.col-lg-5.col-md-6
 					form(action="https://shop.mastervision.su/?r=personal/newsletter/sub/add&id=3568&lg=ru" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" target="_blank").form.mail_section_form
 						.form_wrapper
 							.email-block
 								input( type="hidden" value="1" name="required_fields[email]")
 								input(class="email modal_mail" name="Contact[email]" type="text" placeholder="Ваш email")
-							button(type="submit").button.button_mail Записаться
+							button(type="submit").button.button_mail.button_mail_main Записаться
 							.clearfix
 						p.alert_message 
 						<!--Обязательный параметр. Не удалять и не изменять!-->
